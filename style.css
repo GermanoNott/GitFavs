@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --ff-primary: 'Poppins', sans-serif;
+  --text-color: #dedede;
+  --bg-color: black;
+  --hue: 194  ;
+  --primary-color: hsl(var(--hue), 70%, 15%);
+  
+
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 80rem;
+  margin: 0 auto ;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0 5rem ;
+}
+
+header h1 {
+  font-size: 2rem;
+  
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  color: var(--ff-primary);
+  height: 3.6rem;
+  width: 30rem;
+  font-size: 1rem;
+  border-radius: .4rem;
+  background-color: rgb(13, 49, 52);
+  padding: 0 0.4rem;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+ 
+  background-color: #1b719f;
+  color: var(--text-color);
+  border-radius: .4rem;
+  height: 3.6rem;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  margin-left: .5rem;
+  
+  font-weight: 700;
+  
+}
+
+.search button span {
+  font-size: 1rem;
+  margin-left: .4rem;
+}
+
+.search button:hover{
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: .1rem solid var(--primary-color); 
+  border-radius: 1rem;
+  overflow: hidden;
+  
+  box-shadow: 0 1rem 2rem -1rem rgba(255, 255, 255, 0.3);
+}
+
+
+
+table * {
+  font-size: 1.4rem;
+  font-weight: 400;
+
+}
+
+table th {
+  background: var(--primary-color);
+  text-align: left;
+  padding: 1.5rem;
+}
+
+
+table tr:nth-child(even) {
+  background: rgb(9, 44, 44);
+  
+}
+
+table tr:nth-child(odd) {
+  background: var(--bg-color);
+}
+
+
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: var(--ff-primary);
+}
+
+td.user a p{
+  font-weight: 700;
+  
+}
+
+td.user a span {
+  color: #a8a8a8;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: red;
+
+  cursor: pointer;
+}
